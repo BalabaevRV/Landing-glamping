@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+}
+
+.red  {
+        border: 2px solid red;
+        /*background-color: red;*/
+    }
+
+    .blue {
+        border: 2px solid blue;
+        /*background-color: blue;*/
+    }
+
+    .green {
+        border: 2px solid green;
+        /*background-color: green;*/
+    }
+
+    .purple {
+        border: 2px solid purple;
+        /*background-color: purple;*/
+    }
+
+    .yellow {
+        border: 2px solid yellow;
+        /*background-color: yellow;*/
+    }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button, input, input::placeholder {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    border: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Logovo — glamping</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+	<link href="/style/reset.css" rel="stylesheet">
+	<link href="/style/blocks.css" rel="stylesheet">
+	<link href="/style/blocks1200px.css" rel="stylesheet">
+	<link href="/style/blocks860px.css" rel="stylesheet">
+	<link href="/style/layout.css" rel="stylesheet">
+	<link href="/style/layout1200px.css" rel="stylesheet">
+	<link href="/style/layout860px.css" rel="stylesheet">
+	<link href="/style/mobile.css" rel="stylesheet">
+</head>
+<body id="mainPage">
+	<div class="blackout blackout--hidden" id="blackout" style="display: none"></div>
+	<header class="header">
+		<nav class="header__nav mainNav">
+			<a href="/" class="logo">
+				<img src="img/logo.svg" alt="" class="header__logo">
+			</a>
+			<div class="header__iconBurgerMenu " id="iconBurgerMenu">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+			</div>
+			<ul class="header__mainMenu mainMenu__list">
+				<li class="mainMenu__item"><a href="#about" class="mainMenu__link">О лагере</a></li>
+				<li class="mainMenu__item"><a href="#program" class="mainMenu__link">Программа</a></li>
+				<li class="mainMenu__item"><a href="#booking" class="mainMenu__link">Записаться</a></li>
+				<li class="mainMenu__item"><a href="#contacts" class="mainMenu__link">Контакты</a></li>
+			</ul>
+		</nav>				
+	</header>	
+	<main>
+		<section class="hero">
+			<h1 class="hero__title mainTitle">
+				Отдых с комфортом!
+			</h1>
+			<p class="hero__subtext mainText">
+				Палаточный лагерь высокого класса
+			</p>
+			<a href="#booking" class="button button--white">Записаться</a>
+		</section>
+	<div class="welcomeWrap" id="about">
+		<section class="welcome">
+				<h1 class= "welcome__title title">Добро пожаловать в «Логово»</h1>
+				<p class="welcome__text text">Здесь ты прикоснёшься к дикой природе, находясь в комфортных условиях. Наш лагерь находится в 12 км от Санкт-Петербурга. Расположенный на озере «Луговое» в окружение сосновых деревьев!</p>
+		</section>
+		<!-- <img src="img/welcome.png" alt="Welcome to Logovo"> -->
+	</div>
+	<section class="ourAdvantages">
+		<h1 class="ourAdvantages__title title">Мы предоставляем</h1>
+		<dl class="ourAdvantages__list advantages__items">
+			<div class="advantages__item">
+				<dt class="advantages__term advantages__term--transfer">
+					<p class="advantages__termName">Трансфер</p></dt>
+				<dd class="advantages__definition">Удобный микроавтобус из центра Санкт-Петербруга</dd>
+			</div>
+			<div class="advantages__item">
+				<dt class="advantages__term advantages__term--residence"><p class="advantages__termName">Проживание</p></dt>
+				<dd class="advantages__definition">Просторные и удобные палатки для вашего сна</dd>
+			</div>	
+			<div class="advantages__item">
+				<dt class="advantages__term advantages__term--food"><p class="advantages__termName">Питание</p></dt>
+				<dd class="advantages__definition">Меню составляется исходя из ваших потребностей</dd>	
+			</div>
+			<div class="advantages__item">
+				<dt class="advantages__term advantages__term--sport"><p class="advantages__termName">Спорт</p></dt>
+				<dd class="advantages__definition">Активные игры для поддержания хорошей формы</dd>	
+			</div>
+			<div class="advantages__item">
+				<dt class="advantages__term advantages__term--lecture"><p class="advantages__termName">Лекции</p></dt>
+				<dd class="advantages__definition">Наши лекторы расскажут о природе и тонкостях отдыха на природе</dd>
+			</div>
+			<div class="advantages__item">
+				<dt class="advantages__term advantages__term--comfort"><p class="advantages__termName">Отдых</p></dt>
+				<dd class="advantages__definition">Множество красивых мест для отдыха душой и телом</dd>	
+			</div>	
+		</dl>
+	</section>
+	<section class="aboutTents">
+		<div class="aboutTentsFlexWrap">
+			<div class="aboutTentsWrap">
+				<h1 class="aboutTents__title title">Уют и тепло</h1>
+				<p class="aboutTents__text text">Наши палатки располагаются на специальных площадках, делая проживания в ней комфортно даже в сырую погоду. Размера палаток позволяет комфортно разместиться семье из 3-4 человек </p>
+				<ul class="features__list">
+					<li class="features__item features__item--warm">Индвидуальное отопление</li>
+					<li class="features__item features__item--light">Освещение пространства</li>
+					<li class="features__item features__item--thermacell">Защита <br> от комаров</li>
+				</ul>	
+			</div>
+		</div>
+	</section>
+	<div class="foodsWrap">
+		<section class="foods">
+			<div class="foods__textBlock">
+				<h1 class="foods__title title">Вкусна еда</h1>
+				<p class="text">Блюда готовятся только из высококачественных продуктов. Который закупает лично наш шеф повар. При составлении меню учитываются индивидуальные потребности. Если вы вегетарианец или не переносите лактозу, просто скажите нам об этом и мы учтем это в меню.</p>
+			</div>
+			<div class="foodSlider" id="foodSlider">
+				<ul class="foodSlider__nav">
+					<li class="slider__arrow" id="foodSliderLeft">
+						<svg width="18" height="32">
+							<use xlink:href="/img/sprite.svg#arrow"></use>
+						</svg>
+					</li>
+					<li class="slider__arrow" id="foodSliderRight">
+						<svg width="18" height="32" transform='rotate(180)'>
+							<use xlink:href="/img/sprite.svg#arrow"></use>
+						</svg>	
+					</li>
+				</ul>
+				<ul class="foodSlider__slides" id="foodSliderList">	
+					<li class="foodSlider__slide foodSlider__slide--active"><img src="img/slFood1.jpg" alt="our food"></li>
+					<li class="foodSlider__slide foodSlider__slide--right"><img src="img/slFood2.jpg" alt="our food"></li>
+					<li class="foodSlider__slide foodSlider__slide--hidden"><img src="img/slFood3.jpg" alt="our food"></li>
+					<li class="foodSlider__slide foodSlider__slide--hidden"><img src="img/slFood4.jpg" alt="our food"></li>
+					<li class="foodSlider__slide foodSlider__slide--hidden"><img src="img/slFood5.jpg" alt="our food"></li>
+				</ul>
+				<ul class="slider__nav slider__nav--mobile" id="foodSliderNav">
+				<li class="slider__arrow" id="foodSliderLeftM">
+					<svg width="18" height="32">
+						<use xlink:href="/img/sprite.svg#arrow"></use>
+					</svg>						
+				</li>
+				<li class="slider__dot slider__dot--active"></li>
+				<li class="slider__dot"></li>
+				<li class="slider__dot"></li>
+				<li class="slider__dot"></li>
+				<li class="slider__dot"></li>
+				<li class="slider__arrow" id="foodSliderRightM">
+					<svg width="18" height="32" transform='rotate(180)'>
+						<use xlink:href="/img/sprite.svg#arrow"></use>
+					</svg>
+				</li>
+			</ul>
+			</div>
+		</section>
+	</div>
+	<section class="photos">
+		<h1 class="photos__title title">Фото с «Логово»</h1>
+		<div class="photosSlider" id="gallerySlider">
+			<ul class="photosSlider__slides" id="gallerySliderList">
+				<li class="photosSlider__slide photosSlider__slide--third">
+					<img src="img/slPhoto1.jpg" alt="">
+				</li>
+				<li class="photosSlider__slide photosSlider__slide--second">
+					<img src="img/slPhoto2.jpg" alt="">
+				</li>
+				<li class="photosSlider__slide photosSlider__slide--active">
+					<img src="img/slPhoto3.jpg" alt="">
+				</li>
+				<li class="photosSlider__slide photosSlider__slide--second">
+					<img src="img/slPhoto4.jpg" alt="">
+				</li>
+				<li class="photosSlider__slide photosSlider__slide--third">
+					<img src="img/slPhoto5.jpg" alt="">
+				</li>
+			</ul>
+			<ul class="slider__nav slider__nav--photo" id="GalleryNav">
+				<li class="slider__arrow" id="GallerySliderLeft">
+					<svg width="18" height="32">
+						<use xlink:href="/img/sprite.svg#arrow"></use>
+					</svg>						
+				</li>
+				<li class="slider__arrow" id="GallerySliderRight">
+					<svg width="18" height="32" transform='rotate(180)'>
+						<use xlink:href="/img/sprite.svg#arrow"></use>
+					</svg>
+				</li>
+			</ul>
+			<button  class="button button--black" id="buttonGallery">Все фото</button>
+		</div>
+	</section>
+
+	<section class="tourProgram" id="program">
+		<h1 class="tourProgram__title title">Программа тура</h1>
+		<div class="program__currentDay" id="currentDay">День 1/5</div>
+		<ul class="program__navigation" id="programNavigation">
+			<li class="slider__arrow" id="programArrowLeft">
+				<svg width="18" height="32">
+					<use xlink:href="/img/sprite.svg#arrow"></use>
+				</svg>
+			</li>	
+			<li class="slider__arrow" id="programArrowRight">
+				<svg width="18" height="32" transform='rotate(180)'>
+					<use xlink:href="/img/sprite.svg#arrow"></use>
+				</svg>	
+			</li>
+		</ul>
+		<dl class="program__list" id="programList">
+			<div class="program__wrap program__wrap--active">
+				<dt class="program__day program__day--active">День 1</dt>
+				<dd class="program__content program__content--active program__content--day1">
+					<ul class="program__items">
+						<li class="program__item">Заезд</li>
+						<li class="program__item">Завтрак, знакомство</li>
+						<li class="program__item">Экскурсия по лагерю</li>
+						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Свободное время, обед</li>
+						<li class="program__item">Лекция «Деревья вокруг нас»</li>
+						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Ужин</li>
+					</ul>
+				</dd>
+			</div>
+			<div class="program__wrap">
+				<dt class="program__day">День 2</dt>
+				<dd class="program__content program__content--day2">
+					<ul class="program__items">
+						<li class="program__item">Заезд 2</li>
+						<li class="program__item">Завтрак, знакомство</li>
+						<li class="program__item">Экскурсия по лагерю</li>
+						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Свободное время, обед</li>
+						<li class="program__item">Лекция «Деревья вокруг нас»</li>
+						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Ужин</li>
+					</ul>
+				</dd>
+			</div>
+			<div class="program__wrap">
+				<dt class="program__day">День 3</dt>
+				<dd class="program__content program__content--day3">
+					<ul class="program__items">
+						<li class="program__item">Заезд</li>
+						<li class="program__item">Завтрак, знакомство</li>
+						<li class="program__item">Экскурсия по лагерю</li>
+						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Свободное время, обед</li>
+						<li class="program__item">Лекция «Деревья вокруг нас»</li>
+						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Ужин</li>
+					</ul>
+				</dd>
+			</div>
+			<div class="program__wrap">
+				<dt class="program__day">День 4</dt>
+				<dd class="program__content program__content--day4">
+					<ul class="program__items">
+						<li class="program__item">Заезд</li>
+						<li class="program__item">Завтрак, знакомство</li>
+						<li class="program__item">Экскурсия по лагерю</li>
+						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Свободное время, обед</li>
+						<li class="program__item">Лекция «Деревья вокруг нас»</li>
+						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Ужин</li>
+					</ul>
+				</dd>
+			</div>
+			<div class="program__wrap">
+				<dt class="program__day">День 5</dt>
+				<dd class="program__content program__content--day5">
+					<ul class="program__items">
+						<li class="program__item">Заезд</li>
+						<li class="program__item">Завтрак, знакомство</li>
+						<li class="program__item">Экскурсия по лагерю</li>
+						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Свободное время, обед</li>
+						<li class="program__item">Лекция «Деревья вокруг нас»</li>
+						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Ужин</li>
+					</ul>
+				</dd>
+			</div>
+		</dl>
+	</section>
+	<div class="endWrap">
+		<section class="booking" id="booking">
+			<div class="bookingWrap">
+				<div class="textWrap">
+					<h1 class="title">Бронирование</h1>
+					<form action="#" class="booking__formBooking formBooking" id="bookingForm">
+						<p class="formBooking__text text">Выберите дату тура и укажите ваш email. При раннем бронировании действует скидка 30%</p>
+						<label for="bookingEmail" class="formBooking__label">Email:</label>
+						<input type="email" placeholder="example@gmail.com" name="bookingEmail" id="bookingEmail" class="formBooking__input">
+						<p class="formBooking__error formBooking__error--hidden" id="formBookingError"></p>
+						<label for="bookingData" class="formBooking__label">Дата тура:</label>
+						<select name="bookingData" id="bookingData" c class="formBooking__input formBooking__input--date">
+  							<option value="01052021-05052021" selected>01/05/2021 — 05/05/2021</option>
+  							<option value="14052021-19052021">14/05/2021 — 19/05/2021</option>
+  							<option value="06072021-06072021">06/07/2021 — 11/07/2021</option>
+					</select>	
+						<div class="formBooking__AmountWrap">
+							<label for="bookingAmount" class="formBooking__label">Количество мест:</label>
+							<input type="number" value=1 id="bookingAmount" class="formBooking__amount">
+						</div>
+						<p class="formBooking__error formBooking__error--hidden" id="formBookingError"></p>
+						<p class="formBooking__text"><span class="formBooking__sign">Стоимость: </span> <span class="price__new" id="newPrice">11200 ₽</span> <span class="formBooking__old" id="oldPrice">16000</span></p>
+						<div class="formBooking__checkboxWrap">
+							<input type="checkbox" checked id="bookingCheckbox" class="formBooking__checkbox">
+							<span class="formBooking__box"></span>
+							<label for="bookingCheckbox" class="formBooking__labelCheck">Я принимаю <a href="/" class="formBooking__link" id="privacyPolicyForm">условия обработки персональных 	данных</a></label>
+						</div>
+						<button class="button button--black" id="buttonBooking">Записаться</button>
+					</form>
+				</div>
+				<div class="picWrap"></div>
+		<!-- 		<div class="test"></div> -->
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<h1 class="title--hidden">Контакты</h1>
+			<div class="contactsTextWrap">
+				<a href="tel:+8938994992444" class="contactsLink">8 (938) 994-992-444</a>
+				<a href="mailto:logovo@gmail.com" class="contacts__email contactsLink">logovo@gmail.com</a>
+				<p class="contacts__text text">Г. Санкт-Петербруг ул. Еловая 7</p>
+				<button href="#" class="contacts__button button button--black" id="questionButton">Задать вопрос</button>
+				<p class="contacts__secondTitle secondTittle">Мы в соц. сетях:</p>
+				<ul class="socialNetwork__list">
+					<li class="socialNetwork__item">
+						<a href="https://www.youtube.com/" class="socialNetwork__link">
+							<svg width="16" height="16">
+								<use xlink:href="/img/sprite.svg#youtube"></use>
+							</svg> 
+						</a>	
+					</li>
+					<li class="socialNetwork__item">
+						<a href="https://vk.com/romabalabaev/" class="socialNetwork__link">
+							<svg width="16" height="16">
+								<use xlink:href="/img/sprite.svg#vk"></use>
+							</svg> 
+						</a>						
+					</li>
+					<li class="socialNetwork__item">
+						<a href="https://twitter.com/" class="socialNetwork__link"> 
+							<svg width="16" height="16">
+								<use xlink:href="/img/sprite.svg#twitter"></use>
+							</svg> 
+						</a>	
+					</li>
+					<li class="socialNetwork__item">
+						<a href="https://www.facebook.com/" class="socialNetwork__link">
+							<svg width="16" height="16">
+								<use xlink:href="/img/sprite.svg#facebook"></use>
+							</svg> 
+						</a>		
+					</li>
+					<li class="socialNetwork__item">
+						<a href="https://www.instagram.com/roman.balabaev/" class="socialNetwork__link">
+							<svg width="16" height="16">
+								<use xlink:href="/img/sprite.svg#instagram"></use>
+							</svg> 
+						</a>	
+					</li>
+				</ul>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360851.00681993266!2d30.125794353660535!3d59.920896959587516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697c93605afc7bd%3A0x38f867e8d8cb28ad!2z0KLQvtC60YHQvtCy0L4sINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1631574869272!5m2!1sru!2sru" style="border:0; max-width: 800px; width: 100%; height: 600px" allowfullscreen="" loading="lazy" сlass="map"></iframe>
+		</section>
+	</div>
+	</main>
+	<footer class="bottom">
+		<div class="bottomWrap">
+			<h1 class="title--hidden">­«Логово»</h1>
+			<a href="/" class="logo">
+				<img src="img/logo.svg" alt="" class="bottom__logo">
+			</a>
+			<a  href="/" class="bottom__privacyPolicy smallText" id="privacyPolicyFooter">Политика конфиденциальности</a>
+			<p class="smallText">© 2020 Logovo. Все права защищены</p>
+		</div>
+	</footer>
+	<div class="popUp popUp--hidden" id="popUp" style="display: none">
+		<div class="popUp__close" id="closePopUp">
+			  <span></span>
+			  <span></span>
+		</div>
+		<p class="popUp__text" id="paragraphPopUp"></p>
+		<button  class="popUp__button button button--black" id="closeButtonPopUp">Закрыть окно</button>
+	</div>
+
+	<div class="popUp popUp--hidden popUp--form" id="popUpForm" style="display: none">
+		<div class="popUp__close" id="closePopUpForm">
+			  <span></span>
+			  <span></span>
+		</div>
+		<form class="popUp__form" id="questionForm">
+			<label for="bookingEmail" class="formBooking__label">Email:</label>
+			<input type="email" placeholder="example@gmail.com" name="bookingEmail" id="messageEmail" class="formBooking__input">
+			<p class="formBooking__error formBooking__error--hidden" id="textAreaPopUp"></p>
+
+			<label for="bookingEmail" class="formBooking__label">Текст сообщения:</label>
+			<textarea maxlength="255" placeholder="Напишите свой вопрос" name="bookingEmail" id="messageText" class="formBooking__textArea" rows=7></textarea>
+			<p class="formBooking__error formBooking__error--hidden"></p>
+			<p class="formBooking__maxTextArea"><span id="amountMessage">0</span>/255</p>
+			<button class="button button--black" id="buttonSubmitQuestion">Отправить вопрос</button>
+		</form>
+	</div>
+	<nav class="mobileMenu mobileMenu--hidden" id="mobileMenu" style="display: none">
+		<ul class="mainMenu__list mainMenu__list--mobile" class="mainMenuMobile">
+			<li class="mainMenu__item"><a href="#about" class="mainMenu__link">О лагере</a></li>
+			<li class="mainMenu__item"><a href="#program" class="mainMenu__link">Программа</a></li>
+			<li class="mainMenu__item"><a href="#booking" class="mainMenu__link">Записаться</a></li>
+			<li class="mainMenu__item"><a href="#contacts" class="mainMenu__link">Контакты</a></li>
+		</ul>
+	</nav>
+	<script src="/scripts/popUp.js"></script>
+	<script src="/scripts/forms.js"></script>
+	<script src="/scripts/foodSlider.js"></script>
+	<script src="/scripts/gallerySlider.js"></script>
+	<script src="/scripts/programs.js"></script>
+	<script src="/scripts/swipe.js"></script>
+</body>
+</html>

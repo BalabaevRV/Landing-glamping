@@ -1,0 +1,116 @@
+@media (max-width: 860px) {
+	.mainTitle {
+		font-size: 36px;
+	}
+
+	.title {
+		font-size: 32px;
+	}
+
+	.advantages__items {
+		justify-content: center;
+	}
+
+	.advantages__item {
+		margin-bottom: 40px;
+	}
+
+	.advantages__item:nth-child(5) {
+		margin-top: -15px;
+	}
+
+	.features__list {
+		flex-direction: column;
+	}
+
+	.features__item:nth-child(1){
+		margin: auto;
+	}
+
+	.features__item {
+		width: 200px;
+		margin: auto;
+		padding-bottom: 40px;
+	}
+
+	.slider__nav--mobile {
+		display: flex;
+	}
+
+	.foodSlider__nav {
+		display: none;
+	}
+
+	.photosSlider {
+		min-height: 550px;
+	}
+
+	.photosSlider__slides {
+		min-height: 400px;
+		margin-bottom: 0;
+	}
+	.photosSlider__slide--active {
+		width: 340px;
+		height: 340px;
+	}	
+
+	.photosSlider__slide--second {
+		width: 300px;
+		height: 300px;
+		transform:translateX(-340px); 
+	}
+
+	.photosSlider__slide--second:nth-child(2) {
+		transform:translateX(340px); 
+	}
+
+
+	.program__navigation {
+		display: flex;
+		width: 60%;
+		justify-content: space-between;
+		position: absolute;
+		top: 20%;
+	}
+
+	.program__currentDay {
+		display: block;
+	}
+
+	.program__wrap {
+		display: none;
+	}
+
+	.program__day {
+		display: none;
+	}
+
+	.program__day::before {
+		display: none;
+	}
+
+
+	.program__list::before {
+		display: none;
+	}
+
+	.program__list {
+		flex-direction: column;
+		align-items: center;
+	}	
+
+	.program__wrap--active {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.program__items {
+		padding-left: 80px;
+	}
+
+	.map {
+		width: 100%;
+	}
+
+}

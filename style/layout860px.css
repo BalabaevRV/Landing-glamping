@@ -1,0 +1,88 @@
+
+@media (max-width: 860px) {
+	.header__nav {
+		width: 80%;
+	}
+
+	.header__mainMenu {
+		display: none;
+	}
+
+	.ourAdvantages {
+		width: 400px;
+	}
+
+	.aboutTents {
+		margin-bottom: 60px;
+	}
+ 
+	.aboutTents:after {
+		display: none;
+	}
+
+	.aboutTentsFlexWrap {
+		width: 80%;
+	}
+
+	.aboutTentsWrap {
+		text-align: center;
+		padding-top: 0;
+	}
+
+	.aboutTents__text {
+		margin-bottom: 60px;
+	}
+
+	.foods {
+		width: 80%;
+		text-align: center;
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.foods__textBlock {
+		width: 80%;
+	}
+
+	.foodsWrap::after {
+		display: none;
+	}
+
+	.bookingWrap {
+		display: block;
+		margin: 0;
+	}
+
+	.picWrap {
+		width: 100%;
+		position: static;
+
+	}
+
+	.textWrap {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.picWrap:after {
+		right: auto;
+		left: auto;
+		width: 100%; 
+	}
+
+	.photos__title {
+		margin-bottom: 0;
+	}
+
+
+	.contacts {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.contactsTextWrap {
+		width: 100%;
+		align-items: center;
+	}
+
+}

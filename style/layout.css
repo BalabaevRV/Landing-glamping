@@ -1,0 +1,340 @@
+.title--hidden {
+	display: none;
+}
+
+
+.header {
+	position: absolute;
+	width: 100%;
+	padding-top: 20px;
+}
+
+
+.header__nav {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+
+.hero {
+	text-align: center;
+	background-image: url("/img/bgHero.png"); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 900px;
+	margin-bottom: 60px;
+	padding-top: 220px;
+}
+
+
+.hero__title {
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.hero__subtext{
+	margin: auto;
+	margin-bottom:70px;
+}
+
+.welcome {
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+.welcome__title { 
+	margin-bottom: 25px;
+}
+
+.welcome__text { 
+	margin: 0 auto;
+	margin-bottom: 60px;
+	line-height: 200%;
+	max-width: 1020px;
+}
+
+.welcomeWrap {
+	margin-bottom: 105px;
+}
+
+.welcomeWrap:after {
+	background-image: url('/img/welcome.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: block;
+    height: 480px;
+    content:"";
+    margin: auto;	
+}
+
+.ourAdvantages {
+	width: 1200px;
+	margin: auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.ourAdvantages__title {
+	margin-bottom: 15px;
+}
+
+
+
+.aboutTents {
+/*	background-image: url("/img/tent.png"); 
+	background-repeat: no-repeat;
+	background-position: right; 
+	background-size: contain;*/
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+	min-height: 729px;
+	margin-bottom: 200px;
+}
+
+.aboutTents:after {
+	background-image: url('/img/tent.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 729px;
+    width: 1600px;
+    content:"";
+    overflow-x: hidden;
+}
+
+.aboutTentsFlexWrap{
+	width: 1200px;
+	margin: auto;
+ 	display: flex;
+}
+
+.aboutTentsWrap {
+	width: 600px;
+	padding-top: 110px;
+}
+
+.aboutTents__title {
+	margin-bottom: 25px;
+}
+
+
+.aboutTents__text {
+	margin-bottom: 185px;
+}
+
+
+.foods {
+	display: flex;
+	width: 1200px;
+	margin: auto;
+	align-items: center;
+	margin-bottom: -20px;
+
+}
+
+.foodsWrap::after {
+	background-image: url('/img/bgFood.png');
+    background-size: 1600px 469px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 469px;
+    content:"";
+}	
+
+
+.foodsWrap{
+	position: relative;
+	width: 100%;
+	margin-bottom: 60px;
+	overflow-x: hidden;
+}
+
+
+.foods__textBlock {
+	width: 600px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+}
+
+.foods__title {
+	margin-bottom: 15px;
+}
+
+
+.photos {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+
+.photos__title {
+	margin-bottom: 40px;
+}
+
+
+.tourProgram {
+	min-height: 920px;
+	background-image: url("/img/bgTour.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+
+.tourProgram__title {
+	text-align: center;
+	padding-left: 190px;
+	margin-bottom: 20px;
+}
+
+
+.booking {
+	/*width: 1200px;*/
+	margin: auto;
+	margin-bottom: 80px;
+	position: relative;
+	overflow-x: hidden;
+
+
+}
+
+.booking__formBooking {
+	margin-top: 70px;
+}
+.bookingWrap {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	min-height: 700px;
+	margin: 0 auto;		
+	overflow-x: hidden;
+}
+
+.textWrap {
+	z-index: 2;
+}
+
+.picWrap {
+	width: 1200px;
+	min-height: 524px;
+	margin: 0 auto;	
+	margin-top:100px;
+	position: absolute;
+	overflow-x: hidden;
+	z-index: 0;
+	overflow-y: hidden;
+}
+
+.picWrap:after {
+	background-image: url('/img/bgBooking.png');
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 794px; 
+    height: 524px;
+    content:"";	 
+	right: 0;
+	margin: auto;
+	overflow-x: hidden;  
+}
+
+.contacts {
+	width: 1200px;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	margin:auto;
+	padding-bottom: 400px;
+}
+.contactsTextWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 300px;
+	height: 290px;
+	margin-top: 15px;
+}
+
+.contacts__email{
+	margin-bottom: 20px;
+}
+
+
+.contactsLink {
+	color: #000000;
+	text-decoration: none;
+}
+
+.contacts__text {
+	margin-bottom: 40px;
+}
+
+.contacts__button{
+	margin-bottom: 20px;
+}
+
+.contacts__secondTitle {
+	margin-bottom: 10px;
+}
+
+.socialNetwork__list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.socialNetwork__item {
+	margin-right: 20px;
+}
+
+.endWrap {
+	background-image: url("/img/bgFooter.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.bottom {
+	position: relative;
+
+}
+
+.bottomWrap{
+	position: absolute;
+	top:-110px;
+	width: 100%;
+	text-align: center;
+}
+
+.bottom__logo {
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.smallText{
+	font-size: 10px;
+	color: rgba(50, 50, 50, 0.5);
+	text-decoration: none;
+}
+
+.bottom__privacyPolicy {
+	display: block;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.bottom__privacyPolicy:hover {
+	color: #E5B26F;
+}
