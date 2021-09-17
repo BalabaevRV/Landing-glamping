@@ -10,21 +10,22 @@
 
 	.ourAdvantages {
 		width: 100%;
+		margin-bottom: 105px;
 	}
 
 	.aboutTents {
-		margin-bottom: 60px;
+		margin-bottom: 105px;
 	}
  
 	.aboutTents:after {
 		display: none;
 	}
 
-	.aboutTentsFlexWrap {
+	.aboutTents__FlexWrap {
 		width: 80%;
 	}
 
-	.aboutTentsWrap {
+	.aboutTents__Wrap {
 		text-align: center;
 		padding-top: 0;
 	}
@@ -40,17 +41,30 @@
 		margin-bottom: 0;
 	}
 
+	.foodsWrap {
+		margin-bottom: 105px;
+	}
+
+	.foodsWrap::after {
+		display: none;
+	}
+
 	.foods__textBlock {
 		margin-right: 0;
 		width: auto;
+	}
+
+	.tourProgram {
+		margin-bottom: 90px;
 	}
 
 	.tourProgram__title {
 		padding-left: 0;
 	}
 
-	.foodsWrap::after {
-		display: none;
+
+	.booking__formBooking {
+		margin-top: 30px;
 	}
 
 	.booking__bookingWrap {
@@ -61,6 +75,7 @@
 	.booking__picWrap {
 		width: 100%;
 		position: static;
+		margin-top: 50px;
 
 	}
 
@@ -75,6 +90,9 @@
 		margin: 0 auto;
 	}
 
+	.photos {
+		margin-bottom: 105px;
+	}
 
 	.photos__title {
 		margin-bottom: 0;

@@ -3,9 +3,17 @@
 		width: 100%;
 	}
 
+	.form__textArea {
+		width: 100%;
+	}
+
 	.form__input--date {
 		background:none;
 	}	
+
+	.popUp__form {
+		padding-right: 10px;
+	}
 
 	.program__content {
 		width: auto;
