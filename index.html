@@ -16,7 +16,7 @@
 	<link href="/style/layout1200px.css" rel="stylesheet">
 	<link href="/style/layout860px.css" rel="stylesheet">
 	<link href="/style/layout380px.css" rel="stylesheet">
-	<link href="/style/mobile.css" rel="stylesheet">
+	<!-- <link href="/style/mobile.css" rel="stylesheet"> -->
 </head>
 <body id="mainPage">
 	<div class="blackout blackout--hidden" id="blackout" style="display: none"></div>
@@ -33,7 +33,7 @@
 			<a href="/" class="logo">
 				<img src="img/logo.svg" alt="" class="header__logo">
 			</a>
-			<div class="header__iconBurgerMenu " id="iconBurgerMenu">
+			<div class="iconBurgerMenu" id="iconBurgerMenu">
 				  <span></span>
 				  <span></span>
 				  <span></span>
@@ -277,42 +277,42 @@
 	</section>
 	<div class="endWrap">
 		<section class="booking" id="booking">
-			<div class="bookingWrap">
-				<div class="textWrap">
+			<div class="booking__bookingWrap">
+				<div class="booking__textWrap">
 					<h1 class="title">Бронирование</h1>
 					<form action="#" class="booking__formBooking formBooking" id="bookingForm">
-						<p class="formBooking__text text">Выберите дату тура и укажите ваш email. При раннем бронировании действует скидка 30%</p>
-						<label for="bookingEmail" class="formBooking__label">Email:</label>
-						<input type="email" placeholder="example@gmail.com" name="bookingEmail" id="bookingEmail" class="formBooking__input">
-						<p class="formBooking__error formBooking__error--hidden"></p>
-						<label for="bookingData" class="formBooking__label">Дата тура:</label>
-						<select name="bookingData" id="bookingData" class="formBooking__input formBooking__input--date">
+						<p class="form__text text">Выберите дату тура и укажите ваш email. При раннем бронировании действует скидка 30%</p>
+						<label for="bookingEmail" class="form__label">Email:</label>
+						<input type="email" placeholder="example@gmail.com" name="bookingEmail" id="bookingEmail" class="form__input">
+						<p class="form__error form__error--hidden"></p>
+						<label for="bookingData" class="form__label">Дата тура:</label>
+						<select name="bookingData" id="bookingData" class="form__input form__input--date">
   							<option value="01052021-05052021" selected>01/05/2021 — 05/05/2021</option>
   							<option value="14052021-19052021">14/05/2021 — 19/05/2021</option>
   							<option value="06072021-06072021">06/07/2021 — 11/07/2021</option>
 					</select>	
-						<div class="formBooking__AmountWrap">
-							<label for="bookingAmount" class="formBooking__label">Количество мест:</label>
-							<input type="number" value=1 id="bookingAmount" class="formBooking__amount">
+						<div class="form__AmountWrap">
+							<label for="bookingAmount" class="form__label">Количество мест:</label>
+							<input type="number" value=1 id="bookingAmount" class="form__amount">
 						</div>
-						<p class="formBooking__error formBooking__error--hidden"></p>
-						<p class="formBooking__text"><span class="formBooking__sign">Стоимость: </span> <span class="price__new" id="newPrice">11200 ₽</span> <span class="formBooking__old" id="oldPrice">16000</span></p>
-						<div class="formBooking__checkboxWrap">
-							<input type="checkbox" checked id="bookingCheckbox" class="formBooking__checkbox">
-							<span class="formBooking__box"></span>
-							<label for="bookingCheckbox" class="formBooking__labelCheck">Я принимаю <a href="/" class="formBooking__link" id="privacyPolicyForm">условия обработки персональных 	данных</a></label>
+						<p class="form__error form__error--hidden"></p>
+						<p class="form__text"><span class="form__sign">Стоимость: </span> <span class="price__new" id="newPrice">11200 ₽</span> <span class="form__old" id="oldPrice">16000</span></p>
+						<div class="form__checkboxWrap">
+							<input type="checkbox" checked id="bookingCheckbox" class="form__checkbox">
+							<span class="form__box"></span>
+							<label for="bookingCheckbox" class="form__labelCheck">Я принимаю <a href="/" class="form__link" id="privacyPolicyForm">условия обработки персональных 	данных</a></label>
 						</div>
 						<button class="button button--black" id="buttonBooking">Записаться</button>
 					</form>
 				</div>
-				<div class="picWrap"></div>
+				<div class="booking__picWrap"></div>
 		<!-- 		<div class="test"></div> -->
 			</div>
 		</section>
 
 		<section class="contacts" id="contacts">
 			<h1 class="title--hidden">Контакты</h1>
-			<div class="contactsTextWrap">
+			<div class="contacts__TextWrap">
 				<a href="tel:+8938994992444" class="contactsLink">8 (938) 994-992-444</a>
 				<a href="mailto:logovo@gmail.com" class="contacts__email contactsLink">logovo@gmail.com</a>
 				<p class="contacts__text text">Г. Санкт-Петербруг ул. Еловая 7</p>
@@ -361,7 +361,7 @@
 	</div>
 	</main>
 	<footer class="bottom">
-		<div class="bottomWrap">
+		<div class="bottom__bottomWrap">
 			<h1 class="title--hidden">­«Логово»</h1>
 			<a href="/" class="logo">
 				<img src="img/logo.svg" alt="" class="bottom__logo">
@@ -387,14 +387,14 @@
 			  <span></span>
 			  <span></span>
 			</div>
-			<label for="bookingEmail" class="formBooking__label">Email:</label>
-			<input type="email" placeholder="example@gmail.com" name="bookingEmail" id="messageEmail" class="formBooking__input">
-			<p class="formBooking__error formBooking__error--hidden" id="textAreaPopUp"></p>
+			<label for="questionEmail" class="form__label">Email:</label>
+			<input type="email" placeholder="example@gmail.com" name="questionEmail" id="messageEmail" class="form__input">
+			<p class="form__error form__error--hidden" id="textAreaPopUp"></p>
 
-			<label for="bookingEmail" class="formBooking__label">Текст сообщения:</label>
-			<textarea maxlength="255" placeholder="Напишите свой вопрос" name="bookingEmail" id="messageText" class="formBooking__textArea" rows=7></textarea>
-			<p class="formBooking__error formBooking__error--hidden"></p>
-			<p class="formBooking__maxTextArea"><span id="amountMessage">0</span>/255</p>
+			<label for="questionMessage" class="form__label">Текст сообщения:</label>
+			<textarea maxlength="255" placeholder="Напишите свой вопрос" name="questionMessage" id="messageText" class="form__textArea" rows=7></textarea>
+			<p class="form__error form__error--hidden"></p>
+			<p class="form__maxTextArea"><span id="amountMessage">0</span>/255</p>
 			<button class="button button--black" id="buttonSubmitQuestion">Отправить вопрос</button>
 		</form>
 	</div>

@@ -27,12 +27,8 @@
 	.foods__textBlock {
 		width: 400px;
 	}
-
-	.booking {
-		/*width: 80%;*/
-	}
-
-	.bookingWrap {
+	
+	.booking__bookingWrap {
 		width: 90%;
 	}
 
@@ -40,7 +36,7 @@
 		width: 90%;
 	}
 
-	.contactsTextWrap {
+	.contacts__TextWrap {
 		margin-right: 40px;
 	}
 }

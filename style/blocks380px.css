@@ -1,9 +1,9 @@
 @media (max-width: 380px) {
-	.formBooking__input {
+	.form__input {
 		width: 100%;
 	}
 
-	.formBooking__input--date {
+	.form__input--date {
 		background:none;
 	}	
 

@@ -64,7 +64,7 @@ function validationAmount (event) {
 } 
 
 function toggleError (el, messageEl, message = "") {
-	el.classList.toggle("formBooking__input--error", message); 
+	el.classList.toggle("form__input--error", message); 
 	messageEl.classList.toggle("hidden", !message);
 	messageEl.innerHTML = message;
 }

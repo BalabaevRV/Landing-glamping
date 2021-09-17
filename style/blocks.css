@@ -2,7 +2,105 @@
 /*hover #E5B26F;*/
 /*active #AD7E40;*/
 
+.logo {
+	z-index: 12;
+}
 
+.mobileMenu {
+	background-color: #FFFFFF;
+	position: absolute;
+	width: 95%;
+	height: 70%;
+	right:0;
+	z-index: 11;
+	transition-property: right;
+  transition-duration: 0.8s;
+}
+
+.mobileMenu--hidden {
+	right: -100%;
+}
+
+.iconBurgerMenu {
+	display: none;
+	cursor: pointer;
+  width: 28px;
+  height: 20px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  z-index: 12;
+}
+
+.iconBurgerMenu span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #E19F49;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.iconBurgerMenu:hover span {
+	background-color: #E5B26F;
+}
+
+.iconBurgerMenu:active span {
+	background-color: #AD7E40;
+}
+
+.iconBurgerMenu span:nth-child(1) {
+  top: 0px;
+}
+
+.iconBurgerMenu span:nth-child(2), .iconBurgerMenu span:nth-child(3) {
+  top: 8px;
+}
+
+.iconBurgerMenu span:nth-child(4) {
+  top: 16px;
+}
+
+.iconBurgerMenu.openMenu span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.iconBurgerMenu.openMenu span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.iconBurgerMenu.openMenu span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.iconBurgerMenu.openMenu span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
 
 .mainMenu__list {
 	display: flex;
@@ -305,7 +403,7 @@
 	margin-bottom: 40px;
 }
 
-.slider__nav--mobile {
+.slider__nav--food {
 	display: none;
 }
 
@@ -641,11 +739,11 @@
 	display: inline-block;
 }
 
-.formBooking__text {
+.form__text {
 	margin-bottom: 5px;
 }
 
-.formBooking__input {
+.form__input {
 	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	height: 50px;
@@ -656,11 +754,11 @@
 	padding-left: 10px;
 }
 
-.formBooking__input:-webkit-autofill {
+.form__input:-webkit-autofill {
     -webkit-box-shadow: inset 0 0 0 50px #fff !important;
 }
 
-.formBooking__textArea {
+.form__textArea {
 	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	width: 300px;
@@ -672,13 +770,13 @@
 	resize: none;
 }
 
-.formBooking__textArea:focus {
+.form__textArea:focus {
 	outline: none;
 	border: 3px solid #E5B26F;
 	border-radius:25px;
 }
 
-.formBooking__input--date {
+.form__input--date {
       background: url(/img/dropDownArrow.svg);
       background-repeat: no-repeat;
       background-position: center;
@@ -688,26 +786,26 @@
       background-position-x: 95%;
 }
 
-.formBooking__input:focus {
+.form__input:focus {
 	outline: none;
 	border: 3px solid #E5B26F;
 	border-radius: 50px;
 }
 
-.formBooking__input::placeholder {
+.form__input::placeholder {
 	color: rgba(0, 0, 0, 0.4);
 }
 
-.formBooking__textArea::placeholder {
+.form__textArea::placeholder {
 	color: rgba(0, 0, 0, 0.4);
 }
 
 
-.formBooking__input--error {
+.form__input--error {
 	border-color: #F8382B;
 }
 
-.formBooking__error {
+.form__error {
 	color: #F8382B;
 	margin-left: 15px;
 	margin-top: -5px;
@@ -718,7 +816,7 @@
 	display: none;
 }
 
-.formBooking__AmountWrap {
+.form__AmountWrap {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -727,7 +825,7 @@
 }
 
 
-.formBooking__amount {
+.form__amount {
 	height: 50px;
 	width: 50px;
 	border-radius: 50px;
@@ -750,22 +848,22 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
-.formBooking__amount:focus {
+.form__amount:focus {
 	outline: none;
 	border-radius: 50px;
 	border: 3px solid #E5B26F;
 }
 
-.formBooking__sign {
+.form__sign {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.formBooking__old {
+.form__old {
 	position: relative;
 }
 
-.formBooking__old:after{
+.form__old:after{
 	content:"";
 	display:block;
 	position:absolute;
@@ -777,13 +875,7 @@ input[type="number"]:focus {
 	transform:	rotate(-15deg);
 }
 
-
-/*.formBooking__checkboxWrapp{
-	margin-bottom: 20px;
-	margin-left: 1.2em;
-}*/
-
-.formBooking__checkbox {
+.form__checkbox {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -792,7 +884,7 @@ input[type="number"]:focus {
 }
 
 
-.formBooking__box {
+.form__box {
 	position: absolute;
 	width: 20px;
 	height: 20px;
@@ -800,7 +892,7 @@ input[type="number"]:focus {
 	z-index: -1;
 }
 
-.formBooking__checkbox:checked + .formBooking__box {
+.form__checkbox:checked + .form__box {
 	background-color: #DEAA43;
 	background-image: url(/img/check.svg);
 	background-repeat: no-repeat;
@@ -808,17 +900,17 @@ input[type="number"]:focus {
 	border: none;
 }
 
-.formBooking__checkbox:focus + .formBooking__box {
+.form__checkbox:focus + .form__box {
 	border: 2px solid #AD7E40;
 }
 
-.formBooking__label {
+.form__label {
 	display: block;
 	margin-bottom: 5px;
 	margin-left: 15px;
 }
 
-.formBooking__labelCheck {
+.form__labelCheck {
 	display: block;
 	font-size: 12px;
 	padding-left: 25px;
@@ -828,17 +920,17 @@ input[type="number"]:focus {
 	cursor: pointer;
 }
 
-.formBooking__link:hover {
+.form__link:hover {
  color: #E5B26F;
 }
 
-.formBooking__link:active {
+.form__link:active {
  color: #AD7E40;
 }
 
 
 
-.formBooking__link {
+.form__link {
 	color: #000000;
 }
 
@@ -863,7 +955,7 @@ input[type="number"]:focus {
 	padding-bottom: 20px;
 }
 
-.formBooking__maxTextArea {
+.form__maxTextArea {
 	margin-bottom: 20px;
 }
 

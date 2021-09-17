@@ -1,4 +1,9 @@
 @media (max-width: 860px) {
+	
+	.iconBurgerMenu {
+		display: block;
+	}
+
 	.mainTitle {
 		font-size: 36px;
 	}
@@ -34,7 +39,7 @@
 		padding-bottom: 40px;
 	}
 
-	.slider__nav--mobile {
+	.slider__nav--food {
 		display: flex;
 	}
 

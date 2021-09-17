@@ -53,27 +53,28 @@
 		display: none;
 	}
 
-	.bookingWrap {
+	.booking__bookingWrap {
 		display: block;
 		margin: 0;
 	}
 
-	.picWrap {
+	.booking__picWrap {
 		width: 100%;
 		position: static;
 
 	}
 
-	.textWrap {
-		width: 80%;
-		margin: 0 auto;
-	}
-
-	.picWrap:after {
+	.booking__picWrap:after {
 		right: auto;
 		left: auto;
 		width: 100%; 
 	}
+
+	.booking__textWrap {
+		width: 80%;
+		margin: 0 auto;
+	}
+
 
 	.photos__title {
 		margin-bottom: 0;
@@ -85,7 +86,7 @@
 		width: 100%;
 	}
 
-	.contactsTextWrap {
+	.contacts__TextWrap {
 		width: 100%;
 		align-items: center;
 	}

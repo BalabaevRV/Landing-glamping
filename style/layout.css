@@ -2,6 +2,20 @@
 	display: none;
 }
 
+.blackout {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0,0,0, 0.8);
+	transition-property: opacity;
+  	transition-duration: 0.8s;
+}
+
+.blackout--hidden {
+	opacity: 0;
+}
+
 
 .header {
 	position: absolute;
@@ -199,19 +213,16 @@
 
 
 .booking {
-	/*width: 1200px;*/
 	margin: auto;
 	margin-bottom: 80px;
 	position: relative;
 	overflow-x: hidden;
-
-
 }
 
 .booking__formBooking {
 	margin-top: 70px;
 }
-.bookingWrap {
+.booking__bookingWrap {
 	display: flex;
 	justify-content: space-between;
 	width: 1200px;
@@ -220,11 +231,11 @@
 	overflow-x: hidden;
 }
 
-.textWrap {
+.booking__textWrap {
 	z-index: 2;
 }
 
-.picWrap {
+.booking__picWrap {
 	width: 1200px;
 	min-height: 524px;
 	margin: 0 auto;	
@@ -235,7 +246,7 @@
 	overflow-y: hidden;
 }
 
-.picWrap:after {
+.booking__picWrap:after {
 	background-image: url('/img/bgBooking.png');
     display: block;
     background-repeat: no-repeat;
@@ -257,7 +268,7 @@
 	margin:auto;
 	padding-bottom: 400px;
 }
-.contactsTextWrap {
+.contacts__TextWrap {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -305,7 +316,7 @@
 
 }
 
-.bottomWrap{
+.bottom__bottomWrap {
 	position: absolute;
 	top:-110px;
 	width: 100%;
