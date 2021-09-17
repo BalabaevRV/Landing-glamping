@@ -120,8 +120,8 @@
 							<use xlink:href="/img/sprite.svg#arrow"></use>
 						</svg>
 					</li>
-					<li class="slider__arrow" id="foodSliderRight">
-						<svg width="18" height="32" transform='rotate(180)'>
+					<li class="slider__arrow slider__arrow--right" id="foodSliderRight">
+						<svg width="18" height="32">
 							<use xlink:href="/img/sprite.svg#arrow"></use>
 						</svg>	
 					</li>
@@ -144,8 +144,8 @@
 				<li class="slider__dot"></li>
 				<li class="slider__dot"></li>
 				<li class="slider__dot"></li>
-				<li class="slider__arrow" id="foodSliderRightM">
-					<svg width="18" height="32" transform='rotate(180)'>
+				<li class="slider__arrow slider__arrow--right" id="foodSliderRightM">
+					<svg width="18" height="32">
 						<use xlink:href="/img/sprite.svg#arrow"></use>
 					</svg>
 				</li>
@@ -179,8 +179,8 @@
 						<use xlink:href="/img/sprite.svg#arrow"></use>
 					</svg>						
 				</li>
-				<li class="slider__arrow" id="GallerySliderRight">
-					<svg width="18" height="32" transform='rotate(180)'>
+				<li class="slider__arrow slider__arrow--right" id="GallerySliderRight">
+					<svg width="18" height="32">
 						<use xlink:href="/img/sprite.svg#arrow"></use>
 					</svg>
 				</li>
@@ -198,8 +198,8 @@
 					<use xlink:href="/img/sprite.svg#arrow"></use>
 				</svg>
 			</li>	
-			<li class="slider__arrow" id="programArrowRight">
-				<svg width="18" height="32" transform='rotate(180)'>
+			<li class="slider__arrow slider__arrow--right"  id="programArrowRight">
+				<svg width="18" height="32">
 					<use xlink:href="/img/sprite.svg#arrow"></use>
 				</svg>	
 			</li>
@@ -388,11 +388,11 @@
 			  <span></span>
 			</div>
 			<label for="questionEmail" class="form__label">Email:</label>
-			<input type="email" placeholder="example@gmail.com" name="questionEmail" id="messageEmail" class="form__input">
+			<input type="email" placeholder="example@gmail.com" name="questionEmail" id="questionEmail" class="form__input">
 			<p class="form__error form__error--hidden" id="textAreaPopUp"></p>
 
 			<label for="questionMessage" class="form__label">Текст сообщения:</label>
-			<textarea maxlength="255" placeholder="Напишите свой вопрос" name="questionMessage" id="messageText" class="form__textArea" rows=7></textarea>
+			<textarea maxlength="255" placeholder="Напишите свой вопрос" name="questionMessage" id="questionMessage" class="form__textArea" rows=7></textarea>
 			<p class="form__error form__error--hidden"></p>
 			<p class="form__maxTextArea"><span id="amountMessage">0</span>/255</p>
 			<button class="button button--black" id="buttonSubmitQuestion">Отправить вопрос</button>

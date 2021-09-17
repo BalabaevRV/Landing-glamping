@@ -423,6 +423,12 @@
 	color: #000000;
 }
 
+.slider__arrow--right{
+		-webkit-transform:	rotate(180deg);
+	-ms-transform:	rotate(180deg);
+	transform:	rotate(180deg);
+}
+
 .slider__arrow:hover {
 	color: #E5B26F;
 }
