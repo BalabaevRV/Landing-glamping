@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 
 @media (max-width: 860px) {
 	.header__nav {
@@ -37,6 +44,9 @@
 	.foods {
 		width: 80%;
 		text-align: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		margin-bottom: 0;
 	}
@@ -100,12 +110,17 @@
 
 
 	.contacts {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		width: 100%;
 	}
 
 	.contacts__TextWrap {
 		width: 100%;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -118,4 +133,3 @@
 	}
 
 }
-
