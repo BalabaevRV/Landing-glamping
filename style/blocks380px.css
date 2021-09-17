@@ -1,0 +1,18 @@
+@media (max-width: 380px) {
+	.formBooking__input {
+		width: 100%;
+	}
+
+	.formBooking__input--date {
+		background:none;
+	}	
+
+	.program__content {
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.program__wrap  {
+		width: 80%;
+	}
+}

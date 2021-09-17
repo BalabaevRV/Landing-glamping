@@ -20,7 +20,7 @@ function moveProgramDay (event, direction = "") {
 
 	if (!newActiveDay) {
 		return;
-	}
+	};
 
 
 	let activeDayWrap = programList.querySelector(".program__wrap--active");

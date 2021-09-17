@@ -11,13 +11,23 @@
 	<link href="/style/blocks.css" rel="stylesheet">
 	<link href="/style/blocks1200px.css" rel="stylesheet">
 	<link href="/style/blocks860px.css" rel="stylesheet">
+	<link href="/style/blocks380px.css" rel="stylesheet">
 	<link href="/style/layout.css" rel="stylesheet">
 	<link href="/style/layout1200px.css" rel="stylesheet">
 	<link href="/style/layout860px.css" rel="stylesheet">
+	<link href="/style/layout380px.css" rel="stylesheet">
 	<link href="/style/mobile.css" rel="stylesheet">
 </head>
 <body id="mainPage">
 	<div class="blackout blackout--hidden" id="blackout" style="display: none"></div>
+	<nav class="mobileMenu mobileMenu--hidden" id="mobileMenu" style="display: none">
+		<ul class="mainMenu__list mainMenu__list--mobile">
+			<li class="mainMenu__item"><a href="#about" class="mainMenu__link">О лагере</a></li>
+			<li class="mainMenu__item"><a href="#program" class="mainMenu__link">Программа</a></li>
+			<li class="mainMenu__item"><a href="#booking" class="mainMenu__link">Записаться</a></li>
+			<li class="mainMenu__item"><a href="#contacts" class="mainMenu__link">Контакты</a></li>
+		</ul>
+	</nav>
 	<header class="header">
 		<nav class="header__nav mainNav">
 			<a href="/" class="logo">
@@ -119,9 +129,9 @@
 				<ul class="foodSlider__slides" id="foodSliderList">	
 					<li class="foodSlider__slide foodSlider__slide--active"><img src="img/slFood1.jpg" alt="our food"></li>
 					<li class="foodSlider__slide foodSlider__slide--right"><img src="img/slFood2.jpg" alt="our food"></li>
-					<li class="foodSlider__slide foodSlider__slide--hidden"><img src="img/slFood3.jpg" alt="our food"></li>
-					<li class="foodSlider__slide foodSlider__slide--hidden"><img src="img/slFood4.jpg" alt="our food"></li>
-					<li class="foodSlider__slide foodSlider__slide--hidden"><img src="img/slFood5.jpg" alt="our food"></li>
+					<li class="foodSlider__slide hidden"><img src="img/slFood3.jpg" alt="our food"></li>
+					<li class="foodSlider__slide hidden"><img src="img/slFood4.jpg" alt="our food"></li>
+					<li class="foodSlider__slide hidden"><img src="img/slFood5.jpg" alt="our food"></li>
 				</ul>
 				<ul class="slider__nav slider__nav--mobile" id="foodSliderNav">
 				<li class="slider__arrow" id="foodSliderLeftM">
@@ -214,13 +224,11 @@
 				<dt class="program__day">День 2</dt>
 				<dd class="program__content program__content--day2">
 					<ul class="program__items">
-						<li class="program__item">Заезд 2</li>
-						<li class="program__item">Завтрак, знакомство</li>
-						<li class="program__item">Экскурсия по лагерю</li>
+						<li class="program__item">Игра в волейбол</li>
+						<li class="program__item">Мастер-класс по живописи</li>
 						<li class="program__item">Игра в веревочки</li>
 						<li class="program__item">Свободное время, обед</li>
-						<li class="program__item">Лекция «Деревья вокруг нас»</li>
-						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Лекция об истории реки</li>
 						<li class="program__item">Ужин</li>
 					</ul>
 				</dd>
@@ -229,13 +237,12 @@
 				<dt class="program__day">День 3</dt>
 				<dd class="program__content program__content--day3">
 					<ul class="program__items">
-						<li class="program__item">Заезд</li>
-						<li class="program__item">Завтрак, знакомство</li>
-						<li class="program__item">Экскурсия по лагерю</li>
-						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Рыбалка</li>
+						<li class="program__item">Завтрак</li>
+						<li class="program__item">Экскурсия по островам</li>
+						<li class="program__item">Урок по стрельбе из лука</li>
 						<li class="program__item">Свободное время, обед</li>
-						<li class="program__item">Лекция «Деревья вокруг нас»</li>
-						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Лекция «Птицы нашего края»</li>
 						<li class="program__item">Ужин</li>
 					</ul>
 				</dd>
@@ -244,13 +251,10 @@
 				<dt class="program__day">День 4</dt>
 				<dd class="program__content program__content--day4">
 					<ul class="program__items">
-						<li class="program__item">Заезд</li>
-						<li class="program__item">Завтрак, знакомство</li>
-						<li class="program__item">Экскурсия по лагерю</li>
-						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Завтрак</li>
+						<li class="program__item">Поход в лес</li>
 						<li class="program__item">Свободное время, обед</li>
-						<li class="program__item">Лекция «Деревья вокруг нас»</li>
-						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Мастер-класс по надежным узлам</li>
 						<li class="program__item">Ужин</li>
 					</ul>
 				</dd>
@@ -259,13 +263,12 @@
 				<dt class="program__day">День 5</dt>
 				<dd class="program__content program__content--day5">
 					<ul class="program__items">
-						<li class="program__item">Заезд</li>
-						<li class="program__item">Завтрак, знакомство</li>
-						<li class="program__item">Экскурсия по лагерю</li>
-						<li class="program__item">Игра в веревочки</li>
+						<li class="program__item">Завтрак</li>
+						<li class="program__item">Экскурсия по озерам</li>
+						<li class="program__item">Игра в футбол</li>
 						<li class="program__item">Свободное время, обед</li>
-						<li class="program__item">Лекция «Деревья вокруг нас»</li>
-						<li class="program__item">Мастер-класс по разведению костра</li>
+						<li class="program__item">Песни у костра</li>
+						<li class="program__item">Подготовка к отъезду </li>
 						<li class="program__item">Ужин</li>
 					</ul>
 				</dd>
@@ -281,9 +284,9 @@
 						<p class="formBooking__text text">Выберите дату тура и укажите ваш email. При раннем бронировании действует скидка 30%</p>
 						<label for="bookingEmail" class="formBooking__label">Email:</label>
 						<input type="email" placeholder="example@gmail.com" name="bookingEmail" id="bookingEmail" class="formBooking__input">
-						<p class="formBooking__error formBooking__error--hidden" id="formBookingError"></p>
+						<p class="formBooking__error formBooking__error--hidden"></p>
 						<label for="bookingData" class="formBooking__label">Дата тура:</label>
-						<select name="bookingData" id="bookingData" c class="formBooking__input formBooking__input--date">
+						<select name="bookingData" id="bookingData" class="formBooking__input formBooking__input--date">
   							<option value="01052021-05052021" selected>01/05/2021 — 05/05/2021</option>
   							<option value="14052021-19052021">14/05/2021 — 19/05/2021</option>
   							<option value="06072021-06072021">06/07/2021 — 11/07/2021</option>
@@ -292,7 +295,7 @@
 							<label for="bookingAmount" class="formBooking__label">Количество мест:</label>
 							<input type="number" value=1 id="bookingAmount" class="formBooking__amount">
 						</div>
-						<p class="formBooking__error formBooking__error--hidden" id="formBookingError"></p>
+						<p class="formBooking__error formBooking__error--hidden"></p>
 						<p class="formBooking__text"><span class="formBooking__sign">Стоимость: </span> <span class="price__new" id="newPrice">11200 ₽</span> <span class="formBooking__old" id="oldPrice">16000</span></p>
 						<div class="formBooking__checkboxWrap">
 							<input type="checkbox" checked id="bookingCheckbox" class="formBooking__checkbox">
@@ -313,7 +316,7 @@
 				<a href="tel:+8938994992444" class="contactsLink">8 (938) 994-992-444</a>
 				<a href="mailto:logovo@gmail.com" class="contacts__email contactsLink">logovo@gmail.com</a>
 				<p class="contacts__text text">Г. Санкт-Петербруг ул. Еловая 7</p>
-				<button href="#" class="contacts__button button button--black" id="questionButton">Задать вопрос</button>
+				<button class="contacts__button button button--black" id="questionButton">Задать вопрос</button>
 				<p class="contacts__secondTitle secondTittle">Мы в соц. сетях:</p>
 				<ul class="socialNetwork__list">
 					<li class="socialNetwork__item">
@@ -353,7 +356,7 @@
 					</li>
 				</ul>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360851.00681993266!2d30.125794353660535!3d59.920896959587516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697c93605afc7bd%3A0x38f867e8d8cb28ad!2z0KLQvtC60YHQvtCy0L4sINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1631574869272!5m2!1sru!2sru" style="border:0; max-width: 800px; width: 100%; height: 600px" allowfullscreen="" loading="lazy" сlass="map"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360851.00681993266!2d30.125794353660535!3d59.920896959587516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697c93605afc7bd%3A0x38f867e8d8cb28ad!2z0KLQvtC60YHQvtCy0L4sINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1631574869272!5m2!1sru!2sru" style="border:0; max-width: 800px; width: 100%; height: 600px" allowfullscreen="" loading="lazy"></iframe>
 		</section>
 	</div>
 	</main>
@@ -368,20 +371,22 @@
 		</div>
 	</footer>
 	<div class="popUp popUp--hidden" id="popUp" style="display: none">
-		<div class="popUp__close" id="closePopUp">
-			  <span></span>
-			  <span></span>
+		<div class="popUp__container">
+			<div class="popUp__close" id="closePopUp">
+				  <span></span>
+				  <span></span>
+			</div>
+			<p class="popUp__text" id="paragraphPopUp"></p>
+			<button  class="popUp__button button button--black" id="closeButtonPopUp">Закрыть окно</button>
 		</div>
-		<p class="popUp__text" id="paragraphPopUp"></p>
-		<button  class="popUp__button button button--black" id="closeButtonPopUp">Закрыть окно</button>
 	</div>
 
-	<div class="popUp popUp--hidden popUp--form" id="popUpForm" style="display: none">
-		<div class="popUp__close" id="closePopUpForm">
-			  <span></span>
-			  <span></span>
-		</div>
+	<div class="popUp popUp--hidden" id="popUpForm" style="display: none">
 		<form class="popUp__form" id="questionForm">
+			<div class="popUp__close popUp__close--form" id="closePopUpForm">
+			  <span></span>
+			  <span></span>
+			</div>
 			<label for="bookingEmail" class="formBooking__label">Email:</label>
 			<input type="email" placeholder="example@gmail.com" name="bookingEmail" id="messageEmail" class="formBooking__input">
 			<p class="formBooking__error formBooking__error--hidden" id="textAreaPopUp"></p>
@@ -393,14 +398,6 @@
 			<button class="button button--black" id="buttonSubmitQuestion">Отправить вопрос</button>
 		</form>
 	</div>
-	<nav class="mobileMenu mobileMenu--hidden" id="mobileMenu" style="display: none">
-		<ul class="mainMenu__list mainMenu__list--mobile" class="mainMenuMobile">
-			<li class="mainMenu__item"><a href="#about" class="mainMenu__link">О лагере</a></li>
-			<li class="mainMenu__item"><a href="#program" class="mainMenu__link">Программа</a></li>
-			<li class="mainMenu__item"><a href="#booking" class="mainMenu__link">Записаться</a></li>
-			<li class="mainMenu__item"><a href="#contacts" class="mainMenu__link">Контакты</a></li>
-		</ul>
-	</nav>
 	<script src="/scripts/popUp.js"></script>
 	<script src="/scripts/forms.js"></script>
 	<script src="/scripts/foodSlider.js"></script>

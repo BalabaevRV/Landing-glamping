@@ -9,7 +9,7 @@
 	}
 
 	.ourAdvantages {
-		width: 400px;
+		width: 100%;
 	}
 
 	.aboutTents {
@@ -41,7 +41,12 @@
 	}
 
 	.foods__textBlock {
-		width: 80%;
+		margin-right: 0;
+		width: auto;
+	}
+
+	.tourProgram__title {
+		padding-left: 0;
 	}
 
 	.foodsWrap::after {
@@ -85,4 +90,13 @@
 		align-items: center;
 	}
 
+	.socialNetwork__list {
+		margin-bottom: 10px;
+	}
+
+	.socialNetwork__item:last-child {
+		margin-right: 0;
+	}
+
 }
+

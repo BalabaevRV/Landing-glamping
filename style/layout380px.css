@@ -1,0 +1,10 @@
+@media (max-width: 380px) {
+	
+	.bookingWrap {
+		width: 100%;
+	}
+
+	.booking__formBooking {
+		width: 100%;
+	}
+}

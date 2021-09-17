@@ -24,7 +24,7 @@ function validationEmail () {
 	}  else {
 		toggleError (this ,this.nextElementSibling); 
 		delItemFromErroArray(this, errorArray);
-	}
+	};
 }
 
 function arrayByForm (thisForm) {
@@ -32,7 +32,7 @@ function arrayByForm (thisForm) {
 		return questionFormErrors;
 	} else if (thisForm == bookingForm) {
 		return bookingFormErrors;
-	}	
+	};	
 }
 
 function validationMessage () {
@@ -60,12 +60,12 @@ function validationAmount (event) {
 		toggleError (this, this.parentElement.nextElementSibling);
 		delItemFromErroArray(this, errorArray);	
 		bookingAmount.addEventListener("blur", changeSum);
-	}
+	};
 } 
 
 function toggleError (el, messageEl, message = "") {
 	el.classList.toggle("formBooking__input--error", message); 
-	messageEl.classList.toggle("formBooking__error--hidden", !message);
+	messageEl.classList.toggle("hidden", !message);
 	messageEl.innerHTML = message;
 }
 
@@ -73,13 +73,13 @@ function delItemFromErroArray (item, errorArray) {
 	let numItem = errorArray.indexOf(item);
 	if (numItem != -1) {
 		errorArray.splice(numItem, 1);
-	}	
+	};	
 }
 
 function addItemToErrorArray (item, errorArray) {
 	if (!errorArray.includes(item)) {
 		errorArray.push(item);	
-	}   
+	};  
 } 
 
 

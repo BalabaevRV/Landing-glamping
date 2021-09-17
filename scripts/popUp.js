@@ -28,7 +28,7 @@ function togglePopUp (event) {
 	toggleDisplayPopUp (event);
 	if (hiddenBlackout) {	
 		toggleDisplayBlackout ();
-	}
+	};
 
 }	
 
@@ -39,11 +39,11 @@ function toggleDisplayBlackout () {
 		mainPage.style.overflow = "hidden"
 	} else {
 		mainPage.style.overflow = "auto"	
-	}
+	};
 
 	if (blackout.style.display == "none") {
 		blackout.style.display = "block";
-	}
+	};
 
 	setTimeout(() => blackout.classList.toggle("blackout--hidden"), 10);	
 
@@ -64,7 +64,7 @@ function toggleHiddenPopUp() {
 function toggleHiddenPopUpAndShowForm() {
   	thisPopUp.classList.toggle("popUp--hidden");
   	thisPopUp = popUp; 
-  	thisPopUp.style.display = "block";
+  	thisPopUp.style.display = "flex";
   	setTimeout (() => {
   		thisPopUp.classList.toggle("popUp--hidden");
   		popUpForm.style.display = "none";
@@ -89,7 +89,7 @@ function toggleDisplayPopUp (event) {
 				} else {
 					hiddenBlackout = false;
 					return;
-				}
+				};
 				break;	
 			case buttonGallery:
 				thisPopUp = popUp;
@@ -107,18 +107,18 @@ function toggleDisplayPopUp (event) {
 					animationFunction = toggleHiddenPopUpAndShowForm;
 					setTimeout(animationFunction, 10);
 					return;
-				}
+				};
 				return;						
 			default:
 				thisPopUp = popUp;
 				paragraphPopUp.innerHTML = "Данный раздел еще не готов";
 				animationFunction = toggleHiddenPopUp;
-		}
+		};
 	}
 
 	if (thisPopUp.style.display == "none") {
-		thisPopUp.style.display = "block";
-	} 
+		thisPopUp.style.display = "flex";
+	}; 
 
 	setTimeout(animationFunction, 10);
 }
@@ -129,14 +129,14 @@ function changePopUpDisplay () {
   	if (thisPopUp.className.includes("hidden")) {
   		thisPopUp.style.display = "none";
   		blackout.style.display = "none";	
-  	}  
+  	};  
 }
 
 //Скрывает меню при нажатии на якорную ссылку
 function mainMenuClick(event) {
 	if (event.target.tagName == "A") {
 		togglePopUp();
-	}
+	};
 }
 
 //Проверяет наличие ошибок при заполнении формы

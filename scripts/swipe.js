@@ -27,7 +27,7 @@ function swipeStart (event) {
 	currentLi = (thisList == programList) ? currentEl.closest("dd"): currentEl.closest("li");
 	if (!currentLi || !currentLi.className.includes("active")) {
 		return;
-	}
+	};
 	currentLi.style.cursor = "grabbing";
   	foodSliderList.classList.add("foodSlider__slides--grabbing");
   	distance = 0;
@@ -59,7 +59,7 @@ function swipeEnd () {
   	if (Math.abs(distance) >= minDist && time >= minTime) {
 		 let swipeDirection = (distance >= 0) ? "right" : "left"; 
 		doSwipe(swipeDirection);
-	}
+	};
 
   	currentLi.style.transform = "";
 }
@@ -86,5 +86,5 @@ function doSwipe (swipeDirection) {
 		default:
 			// statements_def
 			break;
-	}
+	};
 }	

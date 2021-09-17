@@ -23,7 +23,7 @@ function moveGalleryPic (event, direction = "") {
 		gallerySliderList.insertAdjacentElement("afterbegin", rightPic);
 		rightPic.classList.add("photosSlider__slide--third");
 		leftPic.classList.add("photosSlider__slide--active");
-	}
+	};
 
 	activePic.classList.remove("photosSlider__slide--active");
 	activePic.classList.add("photosSlider__slide--third");
