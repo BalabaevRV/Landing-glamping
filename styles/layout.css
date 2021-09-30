@@ -376,3 +376,9 @@
 .bottom__privacyPolicy:hover {
 	color: #E5B26F;
 }
+
+.wrap {
+	max-width: 1600px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
