@@ -24,7 +24,7 @@
 		margin-bottom: 105px;
 	}
  
-	.aboutTents:after {
+	.aboutTents::after {
 		display: none;
 	}
 
@@ -89,7 +89,7 @@
 
 	}
 
-	.booking__picWrap:after {
+	.booking__picWrap::after {
 		right: auto;
 		left: auto;
 		width: 100%; 

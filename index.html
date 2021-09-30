@@ -32,7 +32,7 @@
 			<a href="/" class="logo">
 				<img src="img/logo.svg" alt="" class="header__logo">
 			</a>
-			<button class="iconBurgerMenu" id="iconBurgerMenu">
+			<button class="iconBurgerMenu" id="iconBurgerMenu" aria-label="close menu">
 				  <span></span>
 				  <span></span>
 				  <span></span>
@@ -114,12 +114,12 @@
 			</div>
 			<div class="foodSlider" id="foodSlider">
 				<ul class="foodSlider__nav">
-					<li class="slider__arrow" id="foodSliderLeft">
+					<li class="slider__arrow" id="foodSliderLeft" aria-label="Food slider left">
 						<svg width="18" height="32">
 							<use xlink:href="/img/sprite.svg#arrow"></use>
 						</svg>
 					</li>
-					<li class="slider__arrow slider__arrow--right" id="foodSliderRight">
+					<li class="slider__arrow slider__arrow--right" id="foodSliderRight" aria-label="Food slider right">
 						<svg width="18" height="32">
 							<use xlink:href="/img/sprite.svg#arrow"></use>
 						</svg>	
@@ -133,7 +133,7 @@
 					<li class="foodSlider__slide hidden"><img src="img/slFood5.jpg" alt="our food"></li>
 				</ul>
 				<ul class="slider__nav slider__nav--food" id="foodSliderNav">
-				<li class="slider__arrow" id="foodSliderLeftM">
+				<li class="slider__arrow" id="foodSliderLeftM" aria-label="Food slider left">
 					<svg width="18" height="32">
 						<use xlink:href="/img/sprite.svg#arrow"></use>
 					</svg>						
@@ -143,7 +143,7 @@
 				<li class="slider__dot"></li>
 				<li class="slider__dot"></li>
 				<li class="slider__dot"></li>
-				<li class="slider__arrow slider__arrow--right" id="foodSliderRightM">
+				<li class="slider__arrow slider__arrow--right" id="foodSliderRightM" aria-label="Food slider right">
 					<svg width="18" height="32">
 						<use xlink:href="/img/sprite.svg#arrow"></use>
 					</svg>
@@ -173,12 +173,12 @@
 				</li>
 			</ul>
 			<ul class="slider__nav slider__nav--photo" id="GalleryNav">
-				<li class="slider__arrow" id="GallerySliderLeft">
+				<li class="slider__arrow" id="GallerySliderLeft" aria-label="Food slider left">
 					<svg width="18" height="32">
 						<use xlink:href="/img/sprite.svg#arrow"></use>
 					</svg>						
 				</li>
-				<li class="slider__arrow slider__arrow--right" id="GallerySliderRight">
+				<li class="slider__arrow slider__arrow--right" id="GallerySliderRight" aria-label="Food slider right">
 					<svg width="18" height="32">
 						<use xlink:href="/img/sprite.svg#arrow"></use>
 					</svg>
@@ -192,12 +192,12 @@
 		<h1 class="tourProgram__title title">Программа тура</h1>
 		<div class="program__currentDay" id="currentDay">День 1/5</div>
 		<ul class="program__navigation" id="programNavigation">
-			<li class="slider__arrow" id="programArrowLeft">
+			<li class="slider__arrow" id="programArrowLeft" aria-label="Food slider left">
 				<svg width="18" height="32">
 					<use xlink:href="/img/sprite.svg#arrow"></use>
 				</svg>
 			</li>	
-			<li class="slider__arrow slider__arrow--right"  id="programArrowRight">
+			<li class="slider__arrow slider__arrow--right"  id="programArrowRight" aria-label="Food slider right">
 				<svg width="18" height="32">
 					<use xlink:href="/img/sprite.svg#arrow"></use>
 				</svg>	
@@ -371,10 +371,10 @@
 	</footer>
 	<div class="popUp popUp--hidden" id="popUp" style="display: none">
 		<div class="popUp__container">
-			<div class="popUp__close" id="closePopUp">
+			<button class="popUp__close" id="closePopUp" aria-label="close popUp">
 				  <span></span>
 				  <span></span>
-			</div>
+			</button>
 			<p class="popUp__text" id="paragraphPopUp"></p>
 			<button  class="popUp__button button button--black" id="closeButtonPopUp">Закрыть окно</button>
 		</div>
@@ -382,10 +382,10 @@
 
 	<div class="popUp popUp--hidden" id="popUpForm" style="display: none">
 		<form class="popUp__form" id="questionForm">
-			<div class="popUp__close popUp__close--form" id="closePopUpForm">
+			<button class="popUp__close popUp__close--form" id="closePopUpForm" aria-label="close popUp form">
 			  <span></span>
 			  <span></span>
-			</div>
+			</button>
 			<label for="questionEmail" class="form__label">Email:</label>
 			<input type="email" placeholder="example@gmail.com" name="questionEmail" id="questionEmail" class="form__input">
 			<p class="form__error form__error--hidden" id="textAreaPopUp"></p>

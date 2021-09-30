@@ -671,7 +671,7 @@
 	background-color: #AD7E40;
 }
 
-.program__content:before {
+.program__content::before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -680,7 +680,7 @@
     content:"";
 }
 
-.program__content--day1:before {
+.program__content--day1::before {
 	background-image: url('/img/day1.png');
 }
 
@@ -881,7 +881,7 @@ input[type="number"]:focus {
 	position: relative;
 }
 
-.form__old:after{
+.form__old::after{
 	content:"";
 	display:block;
 	position:absolute;
@@ -1048,7 +1048,9 @@ input[type="number"]:focus {
 }
 
 .popUp__close  {
+	background: none;
 	width: 28px;
+	display: block;
 	position: relative;
 	margin-left: auto;
 	padding-top: 20px;	

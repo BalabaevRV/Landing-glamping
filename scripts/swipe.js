@@ -9,8 +9,8 @@ let posX2;
 let thisList;
 let foodSliderList = document.getElementById("foodSliderList");
 
-foodSliderList.addEventListener('mousedown', swipeStart);
-foodSliderList.addEventListener('touchstart', swipeStart);
+foodSliderList.addEventListener("mousedown", swipeStart);
+foodSliderList.addEventListener("touchstart", swipeStart);
 gallerySliderList.addEventListener("mousedown", swipeStart);
 gallerySliderList.addEventListener("touchstart", swipeStart);
 programList.addEventListener("mousedown", swipeStart);
@@ -18,7 +18,7 @@ programList.addEventListener("touchstart", swipeStart);
 
 
 function getEvent() {
-	return (event.type.search('touch') !== -1) ? event.touches[0] : event;
+	return (event.type.search("touch") !== -1) ? event.touches[0] : event;
   }
 
 function swipeStart (event) {
@@ -41,10 +41,10 @@ function swipeStart (event) {
   	posX1 = evt.clientX;
   	startTime = new Date().getTime();
 
-  	document.addEventListener('touchmove', moveAt);
-  	document.addEventListener('touchend', swipeEnd);
-  	document.addEventListener('mousemove', moveAt);
-  	document.addEventListener('mouseup', swipeEnd);
+  	document.addEventListener("touchmove", moveAt);
+  	document.addEventListener("touchend", swipeEnd);
+  	document.addEventListener("mousemove", moveAt);
+  	document.addEventListener("mouseup", swipeEnd);
   
 }
 
@@ -52,10 +52,10 @@ function swipeEnd () {
   	currentLi.style.cursor = "";
   	endTime = new Date().getTime();
   	var time = endTime - startTime;
-  	document.removeEventListener('touchmove', moveAt);
-    document.removeEventListener('mousemove', moveAt);
-    document.removeEventListener('touchend', swipeEnd);
-    document.removeEventListener('mouseup', swipeEnd);
+  	document.removeEventListener("touchmove", moveAt);
+    document.removeEventListener("mousemove", moveAt);
+    document.removeEventListener("touchend", swipeEnd);
+    document.removeEventListener("mouseup", swipeEnd);
 
   	if (Math.abs(distance) >= minDist && time >= minTime) {
 		 let swipeDirection = (distance >= 0) ? "left" : "right"; 

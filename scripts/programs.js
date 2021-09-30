@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 programList.addEventListener("click", moveProgramDay);
 programNavigation.addEventListener("click", moveProgramDay);
 currentDay.addEventListener("click", currentDay);
@@ -10,7 +8,7 @@ let programArrowRight = document.getElementById("programArrowRight");
 let programArrowLeft = document.getElementById("programArrowLeft"); 
 
 function moveProgramDay (event, direction = "") {
-	let arrow = (event) ? event.target.closest('.slider__arrow') : "";
+	let arrow = (event) ? event.target.closest(".slider__arrow") : "";
 	let newActiveDay;
 	let activeDay = programList.querySelector(".program__day--active");
 
@@ -21,7 +19,7 @@ function moveProgramDay (event, direction = "") {
 		let allDays = Array.from(programList.querySelectorAll(".program__day"));
 		newActiveDay =allDays[allDays.indexOf(activeDay)-1];
 	} else {
-		newActiveDay = event.target.closest('.program__day');
+		newActiveDay = event.target.closest(".program__day");
 	};
 
 	if (!newActiveDay) {

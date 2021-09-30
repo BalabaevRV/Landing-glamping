@@ -86,7 +86,7 @@
 	margin-bottom: 105px;
 }
 
-.welcomeWrap:after {
+.welcomeWrap::after {
 	background-image: url('/img/welcome.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -117,7 +117,7 @@
 	margin-bottom: 200px;
 }
 
-.aboutTents:after {
+.aboutTents::after {
 	background-image: url('/img/tent.png');
     background-repeat: no-repeat;
     background-position: right;
