@@ -1,5 +1,9 @@
 "use strict";
 
+let GallerySliderLeft = document.getElementById("GallerySliderLeft"); 
+let GallerySliderRight = document.getElementById("GallerySliderRight"); 
+let gallerySliderList = document.getElementById("gallerySliderList"); 
+
 GallerySliderLeft.addEventListener("click", moveGalleryPic);
 GallerySliderRight.addEventListener("click", moveGalleryPic);
 

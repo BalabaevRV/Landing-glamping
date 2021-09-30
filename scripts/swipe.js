@@ -7,6 +7,7 @@ let endTime;
 let posX1;
 let posX2;
 let thisList;
+let foodSliderList = document.getElementById("foodSliderList");
 
 foodSliderList.addEventListener('mousedown', swipeStart);
 foodSliderList.addEventListener('touchstart', swipeStart);
@@ -57,7 +58,7 @@ function swipeEnd () {
     document.removeEventListener('mouseup', swipeEnd);
 
   	if (Math.abs(distance) >= minDist && time >= minTime) {
-		 let swipeDirection = (distance >= 0) ? "right" : "left"; 
+		 let swipeDirection = (distance >= 0) ? "left" : "right"; 
 		doSwipe(swipeDirection);
 	};
 
@@ -84,7 +85,6 @@ function doSwipe (swipeDirection) {
 			moveProgramDay ("", swipeDirection);
 			break;	
 		default:
-			// statements_def
 			break;
 	};
 }	

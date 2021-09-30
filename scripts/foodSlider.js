@@ -1,5 +1,12 @@
 "use strict";
 
+let foodSliderLeft = document.getElementById("foodSliderLeft");
+let foodSliderRight = document.getElementById("foodSliderRight");
+let foodSliderLeftM = document.getElementById("foodSliderLeftM");
+let foodSliderRightM = document.getElementById("foodSliderRightM");
+let foodSliderNav = document.getElementById("foodSliderNav");
+let foodSlider = document.getElementById("foodSlider"); 
+
 foodSliderLeft.addEventListener("click", moveFoodPic);
 foodSliderRight.addEventListener("click", moveFoodPic);
 foodSliderLeftM.addEventListener("click", moveFoodPic);

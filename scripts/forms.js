@@ -3,12 +3,20 @@
 let errorMessage;
 let questionFormErrors = [];
 let bookingFormErrors = [];
+let bookingEmail = document.getElementById("bookingEmail"); 
+let bookingAmount = document.getElementById("bookingAmount"); 
+let questionEmail = document.getElementById("questionEmail"); 
+let questionMessage = document.getElementById("questionMessage"); 
+let newSum = document.getElementById("newSum"); 
+let newPrice = document.getElementById("newPrice"); 
+let questionForm = document.getElementById("questionForm"); 
+let bookingForm = document.getElementById("bookingForm"); 
 
 bookingEmail.addEventListener("blur", validationEmail);
 bookingAmount.addEventListener("input", validationAmount);
-messageEmail.addEventListener("blur", validationEmail);
-messageText.addEventListener("blur", validationMessage);
-messageText.addEventListener("input", currentAmount);
+questionEmail.addEventListener("blur", validationEmail);
+questionMessage.addEventListener("blur", validationMessage);
+questionMessage.addEventListener("input", currentAmount);
 
 function validationEmail () {
 	let re = /[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+/;
@@ -38,7 +46,6 @@ function arrayByForm (thisForm) {
 function validationMessage () {
 
 	let errorArray = arrayByForm(this.closest("form"));
-	console.log(errorArray);
 	if (this.value.length == 0) {
 		addItemToErrorArray(this, errorArray);
 		toggleError (this, this.nextElementSibling, "Напишите вопрос");
