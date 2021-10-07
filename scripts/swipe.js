@@ -7,7 +7,7 @@ let endTime;
 let posX1;
 let posX2;
 let thisList;
-let foodSliderList = document.getElementById("foodSliderList");
+const foodSliderList = document.getElementById("foodSliderList");
 
 foodSliderList.addEventListener("mousedown", swipeStart);
 foodSliderList.addEventListener("touchstart", swipeStart);

@@ -4,8 +4,8 @@ programList.addEventListener("click", moveProgramDay);
 programNavigation.addEventListener("click", moveProgramDay);
 currentDay.addEventListener("click", currentDay);
 
-let programArrowRight = document.getElementById("programArrowRight"); 
-let programArrowLeft = document.getElementById("programArrowLeft"); 
+const programArrowRight = document.getElementById("programArrowRight"); 
+const programArrowLeft = document.getElementById("programArrowLeft"); 
 
 function moveProgramDay (event, direction = "") {
 	let arrow = (event) ? event.target.closest(".slider__arrow") : "";

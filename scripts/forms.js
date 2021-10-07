@@ -3,14 +3,14 @@
 let errorMessage;
 let questionFormErrors = [];
 let bookingFormErrors = [];
-let bookingEmail = document.getElementById("bookingEmail"); 
-let bookingAmount = document.getElementById("bookingAmount"); 
-let questionEmail = document.getElementById("questionEmail"); 
-let questionMessage = document.getElementById("questionMessage"); 
-let newSum = document.getElementById("newSum"); 
-let newPrice = document.getElementById("newPrice"); 
-let questionForm = document.getElementById("questionForm"); 
-let bookingForm = document.getElementById("bookingForm"); 
+const bookingEmail = document.getElementById("bookingEmail"); 
+const bookingAmount = document.getElementById("bookingAmount"); 
+const questionEmail = document.getElementById("questionEmail"); 
+const questionMessage = document.getElementById("questionMessage"); 
+const newSum = document.getElementById("newSum"); 
+const newPrice = document.getElementById("newPrice"); 
+const questionForm = document.getElementById("questionForm"); 
+const bookingForm = document.getElementById("bookingForm"); 
 
 bookingEmail.addEventListener("blur", validationEmail);
 bookingAmount.addEventListener("input", validationAmount);
@@ -19,7 +19,7 @@ questionMessage.addEventListener("blur", validationMessage);
 questionMessage.addEventListener("input", currentAmount);
 
 function validationEmail () {
-	let re = /[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+/;
+	const re = /[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+/;
 
 	let errorArray = arrayByForm(this.closest("form"));
 

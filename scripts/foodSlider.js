@@ -1,11 +1,11 @@
 "use strict";
 
-let foodSliderLeft = document.getElementById("foodSliderLeft");
-let foodSliderRight = document.getElementById("foodSliderRight");
-let foodSliderLeftM = document.getElementById("foodSliderLeftM");
-let foodSliderRightM = document.getElementById("foodSliderRightM");
-let foodSliderNav = document.getElementById("foodSliderNav");
-let foodSlider = document.getElementById("foodSlider"); 
+const foodSliderLeft = document.getElementById("foodSliderLeft");
+const foodSliderRight = document.getElementById("foodSliderRight");
+const foodSliderLeftM = document.getElementById("foodSliderLeftM");
+const foodSliderRightM = document.getElementById("foodSliderRightM");
+const foodSliderNav = document.getElementById("foodSliderNav");
+const foodSlider = document.getElementById("foodSlider"); 
 
 foodSliderLeft.addEventListener("click", moveFoodPic);
 foodSliderRight.addEventListener("click", moveFoodPic);
